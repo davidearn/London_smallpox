@@ -200,10 +200,11 @@ innovation", cex=cex.text, las=1, adj=c(0,1));
   
   
   ## 1790: Progressive collapse of the parish registration system
-  arrows(1790,-0.18*m, 1841, -0.18*m, 
+  ##arrows(1790,-0.18*m, 1841, -0.18*m, 
+  arrows(1790,-0.187*m, 1841, -0.187*m, 
          length = 0.05, angle = 90, code = 3, 
          lty = par("lty"), lwd = 2, col="darkgreen");
-  arrows(1820,-0.18*m, 1820, -0.38*m, 
+  arrows(1820,-0.187*m, 1820, -0.38*m, 
          length = 0.15, angle = 7, code = 1, 
          lty = par("lty"), lwd = 1, col="darkgreen");
   arrows(1820,-0.42*m, 1820, -0.538*m, 
@@ -223,6 +224,21 @@ system", cex=cex.text, las=1, adj=c(0,1),col="darkgreen");
   text(1785, -0.295*m, "Vaccine
 discovery", cex=cex.text, las=1, adj=c(0,1));
   
+  ## 1803-1815: Napoleonic Wars
+  ##hh <- -0.205*m  # height of arrow
+  hh <- -0.212*m  # height of arrow
+  arrows(1803, hh, 1816, hh, 
+         length = 0.05, angle = 90, code = 3, 
+         lty = par("lty"), lwd = 2, col="chocolate4");
+  arrows(1806, hh - 0.002*m, 1801, hh - 0.093*m, 
+         length = 0.15, angle = 7, code = 1, 
+         lty = par("lty"), lwd = 1, col="chocolate4");
+  arrows(1801, hh - 0.093*m, 1801, hh - 0.326*m,
+         length = 0, angle = 0, code = 1, 
+         lty = par("lty"), lwd = 1, col="chocolate4");
+  text(1791, hh - 0.344*m, "Napoleonic
+wars", cex=cex.text, las=1, adj=c(0,1),col="chocolate4");
+  
   ## 1808: National Vaccine Establishment founded
   arrows(1808,-0.156*m , 1808, -0.278*m, 
          length = 0.15, angle = 7, code = 1, 
@@ -233,7 +249,7 @@ Establishment
 founded", cex=cex.text, las=1, adj=c(0,1));
   
   ## 1840: Variolation banned, vaccination free of charge
-  arrows(1840,-0.156*m, 1840, -0.278*m, 
+  arrows(1840,-0.156*m, 1836, -0.278*m, 
          length = 0.15, angle = 7, code = 1, 
          lty = par("lty"), lwd = 1, col="black");
   text(1828, -0.295*m, "Variolation 
@@ -256,7 +272,8 @@ vaccination", cex=cex.text, las=1, adj=c(0,1));
   arrows(data$numdate[FPW],-0.163*m, data$numdate[FPW2], -0.163*m, 
          length = 0.03, angle = 90, code = 3, 
          lty = par("lty"), lwd = 2, col="chocolate4");
-  arrows(data$numdate[FPW2], -0.156*m,1873,-0.278*m, 1,
+  ##arrows(data$numdate[FPW2], -0.156*m, 1873, -0.278*m, 1,
+  arrows(data$numdate[FPW2], -0.18*m, 1873, -0.278*m, 1,
          length = 0.15, angle = 7, code = 1, 
          lty = par("lty"), lwd = 1, col="chocolate4");
   arrows(1873, -0.278*m,1873,-0.417*m, 1,
@@ -273,7 +290,8 @@ war", cex=cex.text, las=1, adj=c(0,1), col="chocolate4");
   arrows(1867,-0.156*m, 1869, -0.278*m,
          length = 0.15, angle = 7, code = 1, 
          lty = par("lty"), lwd = 1, col="black");
-  arrows(1869,-0.278*m, data$numdate[FPW], -0.16*m, 1,
+  ##arrows(1869,-0.278*m, data$numdate[FPW], -0.16*m, 1,
+  arrows(1869,-0.278*m, data$numdate[FPW], -0.18*m, 1,
          length = 0.15, angle = 7, code = 2, 
          lty = par("lty"), lwd = 1, col="black");
   arrows(1869, -0.278*m,1869,-0.417*m, 1,
@@ -324,14 +342,15 @@ banned", cex=cex.text, las=1, adj=c(0,1));
 War I ", cex=cex.text, las=1, adj=c(0,1), col="chocolate4");
   
   ## 1920: Variola minor
+  variola.minor.col <- "darkgreen" # "chocolate4"
   arrows(1920,-0.163*m, 1931, -0.163*m, 
          length = 0.04, angle = 90, code = 3, 
-         lty = par("lty"), lwd = 2, col="chocolate4");
+         lty = par("lty"), lwd = 2, col=variola.minor.col);
   arrows(1928,-0.163*m, 1928, -0.538*m, 
          length = 0.15, angle = 7, code = 1, 
-         lty = par("lty"), lwd = 1, col="chocolate4");
+         lty = par("lty"), lwd = 1, col=variola.minor.col);
   text(1926, -0.556*m, "Variola
-minor only", cex=cex.text, las=1, adj=c(0,1), col="chocolate4");
+minor only", cex=cex.text, las=1, adj=c(0,1), col=variola.minor.col);
   #
 }
 
