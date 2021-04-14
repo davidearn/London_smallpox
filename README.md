@@ -6,11 +6,8 @@ Data and R scripts associated with
 	by Olga Krylova and David J. D. Earn.
     PLoS Biology, 2020
 
-## Manuscript Number
-TO ADD
-
 ## DOI of the manuscript
-TO ADD
+10.1371/journal.pbio.3000506
 
 ## Article Title
 Patterns of smallpox mortality in London, England, over three centuries.
